@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class WhitePage extends StatefulWidget {
@@ -21,10 +20,9 @@ class _WhitePageState extends State<WhitePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              child: Text(widget.title),
-            ),
+            Center(child: Text(widget.title)),
             TextButton(
                 onPressed: widget.onPressed, child: Text(widget.buttonText))
           ],
